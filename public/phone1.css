@@ -1,0 +1,21 @@
+.container{
+    width: 80%;
+}
+
+#send-container {
+    width: 80%;
+}
+
+#messageInp{
+    font-size: 1rem;
+}
+
+.btn{
+    padding-bottom: 38px;
+
+}
+
+.btn img{
+    height: 38px;
+    width:40px;
+}

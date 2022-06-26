@@ -1,0 +1,19 @@
+.container{
+    position: relative;
+    left:13%;
+    width:95%;
+}
+
+.logo{
+    position: relative;
+    left: 76%;
+}
+
+.header{
+    position: relative;
+    left: 12%;
+}
+
+/* #send-container{
+    margin-left: -15%;
+} */

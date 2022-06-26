@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('MuIV2JN.webp');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    height: 700px;
+
+
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    opacity: 0.6;
+    margin-top: 10px;
+    border-radius: 90px;
+
+}
+
+.header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+
+.container {
+    
+    border: 5px solid rgb(4, 1, 1);
+    background-color: rgb(202, 207, 211);
+    border-radius: 10px;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    overflow-y: auto;
+    max-width: 1280px;
+    
+
+}
+
+.left {
+    float: left;
+    clear: both;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(207, 179, 245);
+    font-weight: bold;
+    margin: 10px 20px;
+    font-size: 1.5rem;
+
+
+}
+
+.right {
+    float: right;
+    clear: both;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(152, 176, 241);
+    font-weight: bold;
+    margin: 10px 20px;
+    font-size: 1.5rem;
+
+}
+
+#container-heading {
+    text-align: center;
+    margin-top: 30%;
+
+
+}
+
+.send {
+    display: flex;
+    /* border: 2px solid black; */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#send-container {
+    margin-top: -5px;
+    display: flex;
+}
+
+#send-container input {
+    margin: 15px;
+    align-items: flex-start;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none
+}
+
+#messageInp {
+    font-weight: bold;
+}
+
+.btn {
+
+    padding-bottom: 34px;
+    margin-top: 15px;
+    margin-left: -10px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.btn img {
+    opacity: 0.8;
+    height: 30px;
+    width: 30px;
+}
+
+.btn:hover {
+    transform: scale(1.15);
+}

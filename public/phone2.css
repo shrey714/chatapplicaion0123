@@ -1,0 +1,23 @@
+
+.container{
+    width: 80%;
+    position: relative;
+    left: 0.4%;
+}
+
+#send-container {
+    margin-top: 10px;
+    width: 80%;
+    
+}
+
+.btn img{
+    height: 35px;
+    width:35px;
+}
+
+#send-container input{
+    margin-left: 5px;
+    width: 20rem;
+    
+}

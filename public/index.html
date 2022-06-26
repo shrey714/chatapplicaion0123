@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:850px)"
+      href="phone1.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:600px)"
+      href="phone2.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:370px)"
+      href="phone3.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:340px)"
+      href="phone4.css"
+    />
+
+    <title>Chat application</title>
+    <script src="https://chatapplication0123.herokuapp.com/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script>
+  </head>
+
+  <body>
+    <nav>
+      <img class="logo" src="-416011564385oqfnaevjq.png" alt="404 not found" />
+    </nav>
+    <h1 class="header">Chat App</h1>
+    <div class="container">
+      <!-- <div class="left">hello</div>
+        <div class="right">hello</div> -->
+      <h1 id="container-heading">Your chats will be shown here</h1>
+    </div>
+
+    <div class="send">
+      <form action="#" id="send-container">
+        <input
+          type="text"
+          name="messageInp"
+          id="messageInp"
+          placeholder="Enter your message"
+        />
+        <button class="btn" type="submit">
+          <img src="send_icon.png" alt="send" />
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

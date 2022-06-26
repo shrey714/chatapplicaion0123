@@ -1,0 +1,131 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo{
+    position: relative;
+    left:10%;
+    margin-top: 55px;
+    height: 100px;
+    width: 100px;
+
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left:4rem;
+    font-size:  5rem;   
+}
+
+
+
+/* body {
+    background-size: 1px;
+    height: 1652px;
+    
+}
+
+
+
+
+
+.container{
+    position: relative;
+    left: 4%;
+    width: 25rem;
+    height: 950px;
+    margin-top: 10px;
+}
+
+#container-heading{
+    font-size: 4rem;
+    
+}
+
+.left{
+    font-size: 3rem;
+}
+.right{
+    font-size: 3rem;
+}
+
+#send-container input {
+    position: relative;
+    left: 75px;
+    width: 285px;
+    padding: 25px;
+    margin: 15px 10px 0px -7px;
+
+}
+
+#messageInp {
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+.btn {
+    margin-left: -10px;
+    padding: 72px 9px 11px 14px
+}
+
+.btn img {
+    
+    height: 80px;
+    width: 70px;
+    padding-right: 20px;
+    margin: -72px -28px 5px 63px;
+    
+}
+
+.btn:hover {
+    transform: scale(1.15);
+}  */
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-size: 1px;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    margin-top: 10px;
+}
+
+#send-container{
+    /* position: absolute;
+    top: 92%;
+    left:7%; */
+}
+
+#send-container input{
+    width: 500px;
+}
+
+#messageInp {
+    font-weight: bold;
+    font-size: 2rem;
+    
+}
+
+
+.btn img{
+    height:54px;
+    width: 50px;
+    
+    margin: -48px -4px 2px -4px;
+    
+    
+}
+
+.btn{
+    padding: 47px 10px 10px 10px
+} 
