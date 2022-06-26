@@ -1,9 +1,17 @@
-const io =require('socket.io')(4444);
-// CORS POLICY FOR OUR CLIENT HAS TO BE DISABLED
+const express = require('express');
+const app = express();
+const http = require('http');
+const server = http.createServer(app);
+const { Server } = require("socket.io");
+const io =new Server(server);
+
+const PORT = process.env.PORT || 3000;
 const users = {};
-// Empty object
-// io listens to every connection made in the application
-// socket.on takes care of any particular connection based on arguments received
+
+app.get('/', (req, res) => {
+  res.write('<h1>server running</h1>');
+  res.end();
+});
 io.on('connection', socket => {
 
     // What is to be broadcasted when new server joins
@@ -26,3 +34,6 @@ io.on('connection', socket => {
 
     // Here by broadcasted we can say the server(index.js) makes the client.js to call the respective send,receive,disconnect functions 
 })
+server.listen(3000, () => {
+  console.log('listening on *:3000');
+});
