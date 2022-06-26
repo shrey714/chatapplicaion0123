@@ -7,9 +7,7 @@ const server = http.createServer(app);
 // server-side
 const io = require("socket.io")(server, {
   cors: {
-    methods: ["GET", "POST"],
-    allowedHeaders: ["my-custom-header"],
-    credentials: true
+    credentials: false
   }
 });
 const PORT = process.env.PORT || 3000;
