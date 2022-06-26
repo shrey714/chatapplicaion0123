@@ -1,9 +1,10 @@
-const socket = io('https://chatapplication0123.herokuapp.com/',{
-    withCredentials: true,
-    extraHeaders: {
-      "my-custom-header": "abcd"
-    }
-});
+// const socket = io('https://chatapplication0123.herokuapp.com/',{
+//     withCredentials: true,
+//     extraHeaders: {
+//       "my-custom-header": "abcd"
+//     }
+// });
+var socket = io();
 const form = document.getElementById('send-container')
 const messageInput = document.getElementById('messageInp')
 const messageContainer = document.querySelector('.container')
