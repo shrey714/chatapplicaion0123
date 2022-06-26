@@ -1,16 +1,11 @@
-const express = require('express');
-const app = express();
-const http = require('http');
-const server = http.createServer(app);
-// const { Server } = require("socket.io");
-// const io =new Server(server);
-// server-side
-const io = require("socket.io")(server, {
-  cors: {
-    credentials: false
-  }
-});
-const PORT = process.env.PORT || 3000;
+var express = require('express');
+var app = express();
+app.use(express.static('public')); 
+var http = require('http').Server(app);
+var port = process.env.PORT || 3001;
+
+// setup my socket server
+var io = require('socket.io')(http);
 const users = {};
 
 app.get('/', (req, res) => {
@@ -39,6 +34,10 @@ io.on('connection', socket => {
 
     // Here by broadcasted we can say the server(index.js) makes the client.js to call the respective send,receive,disconnect functions 
 })
-server.listen(PORT, () => {
-  console.log('listening on *:3000');
+app.get('/', function(req, res) {
+    res.sendFile(__dirname + '/public/index.html');
+});
+
+http.listen(port, function() {
+    console.log('listening on *: ' + port);
 });
