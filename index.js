@@ -2,14 +2,21 @@ const express = require('express');
 const app = express();
 const http = require('http');
 const server = http.createServer(app);
-const { Server } = require("socket.io");
-const io =new Server(server);
-
+// const { Server } = require("socket.io");
+// const io =new Server(server);
+// server-side
+const io = require("socket.io")(server, {
+  cors: {
+    methods: ["GET", "POST"],
+    allowedHeaders: ["my-custom-header"],
+    credentials: true
+  }
+});
 const PORT = process.env.PORT || 3000;
 const users = {};
 
 app.get('/', (req, res) => {
-  res.write('<h1>server running</h1>');
+  res.write('<h1>server running 123..</h1>');
   res.end();
 });
 io.on('connection', socket => {
