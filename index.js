@@ -34,6 +34,6 @@ io.on('connection', socket => {
 
     // Here by broadcasted we can say the server(index.js) makes the client.js to call the respective send,receive,disconnect functions 
 })
-server.listen(3000, () => {
+server.listen(PORT, () => {
   console.log('listening on *:3000');
 });
